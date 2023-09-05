@@ -1,7 +1,7 @@
 
 import os
 import sys
-import keyboard
+import keyboard # pip install keyboard, en la terminal para descargar el import
 
 # IMPORTAR LOS DIFERENTES PROYECTOS 
 
