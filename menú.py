@@ -2,9 +2,12 @@
 import os
 import sys
 import keyboard # pip install keyboard, en la terminal para descargar el import
+from tkinter import *
 
 # IMPORTAR LOS DIFERENTES PROYECTOS 
 
+#Este es la herramienta creada por sJuan felipe Suarez
+import calculadora as calculator_juan
 from contador_caracteres import contador_caracteres
 
 
@@ -71,8 +74,7 @@ while opcion != "6":
 
         # --------------- Herramienta 1. ----------------
         
-
-
+        calculator_juan.calculadora()
         finalizar_programa()
             
         # ---------------- Fin opción 1. ---------------- 
