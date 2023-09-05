@@ -1,12 +1,11 @@
 
 import os
 import sys
-import keyboard
-from contador_caracteres import contador_caracteres
+import keyboard # pip install keyboard, en la terminal para descargar el import
 
 # IMPORTAR LOS DIFERENTES PROYECTOS 
 
-
+from contador_caracteres import contador_caracteres
 
 
 
