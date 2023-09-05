@@ -123,23 +123,27 @@ while opcion != "6":
 
         finalizar_programa()
             
-        # ---------------- Fin opción 1. ----------------  
+        # ---------------- Fin opción 4. ----------------  
         
     elif opcion == "5":
-    
+
         limpiar_consola()
-        
-        print("Has seleccionado la Opción 5. ( Contador de caracteres ) \n")
-        print("Preciona enter para ejecutar...")
+        # --------------- Herramienta 4. ----------------
+
+        print("Has seleccionado la Opción 5. ( Contador de Caracteres ) \n")
+        print("Preciona enter para ejecutar... \n")
         input()
         
-        # --------------- Herramienta 5. ----------------
-        
-
-
-        finalizar_programa()
+        while True:
+            phrase = input('Ingrese una frase o palabra: ')
+            count = len(phrase)
+            print(f'La frase tiene {count} caracteres')
             
-        # ---------------- Fin opción 1. ----------------  
+            again = input('¿Quiere ingresar otra frase? (s/n) ')
+            if again.lower() == 'n':
+                print("\n" + "Saliendo de la herramienta... \n \n")
+                finalizar_programa()
+ # ---------------- Fin opción 4. ---------------- 
     
     elif opcion == "6":
         
