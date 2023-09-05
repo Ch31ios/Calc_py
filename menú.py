@@ -6,10 +6,9 @@ from tkinter import *
 
 # IMPORTAR LOS DIFERENTES PROYECTOS 
 
-
 #Este es la herramienta creada por sJuan felipe Suarez
 import calculadora as calculator_juan
-
+from contador_caracteres import contador_caracteres
 
 
 
@@ -122,27 +121,25 @@ while opcion != "6":
         
         # --------------- Herramienta 4. ----------------
         
-
+        contador_caracteres
 
         finalizar_programa()
             
-        # ---------------- Fin opción 1. ----------------  
+        # ---------------- Fin opción 4. ----------------  
         
     elif opcion == "5":
-    
+
         limpiar_consola()
-        
-        print("Has seleccionado la Opción 5. ( Contador de caracteres ) \n")
-        print("Preciona enter para ejecutar...")
+        print("Has seleccionado la Opción 5. ( Contador de Caracteres ) \n")
+        print("Preciona enter para ejecutar... \n")
         input()
-        
-        # --------------- Herramienta 5. ----------------
-        
+        # --------------- Herramienta 4. ----------------
 
-
-        finalizar_programa()
-            
-        # ---------------- Fin opción 1. ----------------  
+        
+        
+        
+    
+        # ---------------- Fin opción 4. ---------------- 
     
     elif opcion == "6":
         
