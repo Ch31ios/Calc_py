@@ -2,6 +2,7 @@
 import os
 import sys
 import keyboard
+from contador_caracteres import contador_caracteres
 
 # IMPORTAR LOS DIFERENTES PROYECTOS 
 
@@ -119,7 +120,7 @@ while opcion != "6":
         
         # --------------- Herramienta 4. ----------------
         
-
+        contador_caracteres
 
         finalizar_programa()
             
@@ -128,22 +129,16 @@ while opcion != "6":
     elif opcion == "5":
 
         limpiar_consola()
-        # --------------- Herramienta 4. ----------------
-
         print("Has seleccionado la Opción 5. ( Contador de Caracteres ) \n")
         print("Preciona enter para ejecutar... \n")
         input()
+        # --------------- Herramienta 4. ----------------
+
         
-        while True:
-            phrase = input('Ingrese una frase o palabra: ')
-            count = len(phrase)
-            print(f'La frase tiene {count} caracteres')
-            
-            again = input('¿Quiere ingresar otra frase? (s/n) ')
-            if again.lower() == 'n':
-                print("\n" + "Saliendo de la herramienta... \n \n")
-                finalizar_programa()
- # ---------------- Fin opción 4. ---------------- 
+        
+        
+    
+        # ---------------- Fin opción 4. ---------------- 
     
     elif opcion == "6":
         
