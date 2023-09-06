@@ -7,10 +7,18 @@ from tkinter import *
 
 # IMPORTAR LOS DIFERENTES PROYECTOS 
 
+
+import contador_caracteres as contador_caracteres
+
+
+
+
+
 #Este es la herramienta creada por sJuan felipe Suarez
 import calculadora as calculator_juan
 import GeneradorContraseñas as GeCon
 import contador_caracteres as contador_caracteres
+
 
 # --------------- Limpiar consola ---------------
 
@@ -120,7 +128,12 @@ while opcion != "6":
         
         # --------------- Herramienta 4. ----------------
 
+        
+       
+
+
         GeCon.procedimiento()
+
 
         finalizar_programa()
             
@@ -135,9 +148,16 @@ while opcion != "6":
         input()
         # --------------- Herramienta 5. ----------------
 
+
+        
+        contador_caracteres.contador_caracteres()
+        finalizar_programa()
+        
+
         contador_caracteres.contador_caracteres()
 
         finalizar_programa()
+
     
         # ---------------- Fin opción 5. ---------------- 
     
