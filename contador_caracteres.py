@@ -1,5 +1,5 @@
 #Contador Caracteres v1
-from menú import finalizar_programa
+
 def contador_caracteres():
 
     while True:
