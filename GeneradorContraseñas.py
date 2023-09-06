@@ -3,9 +3,6 @@ import os
 import string
 
 
-def limpiar_consola():
-    os.system('cls' if os.name == 'nt' else 'clear')
-
 def generar_contraseña(longitud, usar_mayusculas=True, usar_numeros=True, usar_simbolos=True):
 
     caracteres = string.ascii_letters
@@ -27,7 +24,7 @@ def generar_contraseña(longitud, usar_mayusculas=True, usar_numeros=True, usar_
     return contraseña
 
 def procedimiento():
-    os.system('cls' if os.name == 'nt' else 'clear')
+
     print("\n--> GENERADOR DE CONTRASEÑAS SEGURAS <--")
 
     while True:

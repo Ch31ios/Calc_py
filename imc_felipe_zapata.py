@@ -1,3 +1,4 @@
+
 def obtener_numero(prompt):
     while True:
         try:
@@ -13,7 +14,7 @@ def calcular_imc(peso, altura):
     imc = peso / (altura ** 2)
     return imc
 
-if __name__ == "__main__":
+def procedimiento():
     continuar1 = True
     while continuar1:
         
@@ -39,3 +40,6 @@ if __name__ == "__main__":
         
         if continuar.lower() != "s":
             continuar1 = False
+                
+if __name__ == "__main__":
+    procedimiento()

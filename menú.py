@@ -5,19 +5,13 @@ import sys
 import keyboard # pip install keyboard, en la terminal para descargar el import
 from tkinter import *
 
-# IMPORTAR LOS DIFERENTES PROYECTOS 
+# Importar los diferentes proyectos
 
-
-import contador_caracteres as contador_caracteres
-import conversor as conversor
-
-
-
-#Este es la herramienta creada por sJuan felipe Suarez
 import calculadora as calculator_juan
+import conversor as conversor
+import imc_felipe_zapata as indice_masa_corporal
 import GeneradorContraseñas as GeCon
 import contador_caracteres as contador_caracteres
-
 
 # --------------- Limpiar consola ---------------
 
@@ -25,7 +19,6 @@ def limpiar_consola():
     os.system('cls' if os.name == 'nt' else 'clear')  # Limpiar consola
     
 limpiar_consola()
-
 
 # ---------- Finalizar cada herramienta ------------
 
@@ -76,15 +69,10 @@ while opcion != "6":
         print("Has seleccionado la Opción 1. ( Calculadora ) \n")
         print("Preciona enter para ejecutar... \n")
         input()
-
-        # --------------- Herramienta 1. ----------------
         
         calculator_juan.calculadora()
-
         finalizar_programa()
-            
-        # ---------------- Fin opción 1. ----------------
-        
+
     elif opcion == "2":
         
         limpiar_consola()
@@ -92,14 +80,10 @@ while opcion != "6":
         print("Has seleccionado la Opción 2. ( Conversor de pesos (COP) ) \n")
         print("Preciona enter para ejecutar... \n")
         input()
-
-        # --------------- Herramienta 2. ----------------
-        conversor.Conversor()
-
-        finalizar_programa()
-            
-        # ---------------- Fin opción 2. ---------------- 
         
+        conversor.Conversor()
+        finalizar_programa()
+
     elif opcion == "3":
         
         limpiar_consola()
@@ -107,14 +91,9 @@ while opcion != "6":
         print("Has seleccionado la Opción 3. ( Índice de masa corporal ) \n")
         print("Preciona enter para ejecutar... \n")
         input()
-        
-        # --------------- Herramienta 3. ----------------
-        
 
-
+        indice_masa_corporal.procedimiento()
         finalizar_programa()
-            
-        # ---------------- Fin opción 3. ----------------  
         
     elif opcion == "4":
     
@@ -124,18 +103,8 @@ while opcion != "6":
         print("Preciona enter para ejecutar... \n")
         input()
         
-        # --------------- Herramienta 4. ----------------
-
-        
-       
-
-
         GeCon.procedimiento()
-
-
         finalizar_programa()
-            
-        # ---------------- Fin opción 4. ----------------  
         
     elif opcion == "5":
 
@@ -144,20 +113,9 @@ while opcion != "6":
         print("Has seleccionado la Opción 5. ( Contador de Caracteres ) \n")
         print("Preciona enter para ejecutar... \n")
         input()
-        # --------------- Herramienta 5. ----------------
-
-
-        
-        contador_caracteres.contador_caracteres()
-        finalizar_programa()
-        
 
         contador_caracteres.contador_caracteres()
-
         finalizar_programa()
-
-    
-        # ---------------- Fin opción 5. ---------------- 
     
     elif opcion == "6":
         
@@ -165,8 +123,6 @@ while opcion != "6":
         
         print("\n" + "Saliendo del programa... \n \n")
         sys.exit()
-    
-        # ---------------- Fin opción 6. ----------------  
 
     else:
         

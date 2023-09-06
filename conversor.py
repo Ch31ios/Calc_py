@@ -2,7 +2,6 @@ import os
 
 def Conversor():
     
-    os.system('cls' if os.name == 'nt' else 'clear')
     menu = """
 ¡Bienvenido al conversor de monedas!
 
@@ -40,5 +39,3 @@ def Conversor():
         else:
             print("Opción no válida. Por favor, elige una opción válida.")
 
-# Llamamos a la función principal del conversor
-Conversor()
