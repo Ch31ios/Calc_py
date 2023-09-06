@@ -14,16 +14,28 @@ def calcular_imc(peso, altura):
     return imc
 
 if __name__ == "__main__":
-    
-    while True:
+    continuar1 = True
+    while continuar1:
         
-        print("Calculadora de IMC")
+        print("\nCalculadora de IMC\n")
         peso = obtener_numero("Ingresa tu peso en kilogramos: ")
         altura = obtener_numero("Ingresa tu altura en metros: ")
         resultado = calcular_imc(peso, altura)
-        print(resultado)
         
-        continuar = input("¿Deseas calcular otro IMC? (s/n): ")
-        continuar = True
+        if isinstance(resultado, float):
+            print(f"")
+            if resultado < 18.5:
+                print(f"Tu IMC es: {round(resultado):.2f} - tienes bajo peso.\n")
+            elif resultado < 24.9:
+                print(f"Tu IMC es: {round(resultado):.2f} - tu peso es saludable.\n")
+            elif resultado < 29.9:
+                print(f"Tu IMC es: {round(resultado):.2f} - tienes sobrepeso.\n")
+            else:
+                print(f"Tu IMC es: {round(resultado):.2f} - tienes obesidad.\n")
+        else:
+            print(resultado)
+            
+        continuar = input("\n¿Deseas calcular otro IMC? (s/n): ")
+        
         if continuar.lower() != "s":
-            continuar = False
+            continuar1 = False
