@@ -5,7 +5,7 @@ import keyboard # pip install keyboard, en la terminal para descargar el import
 
 # IMPORTAR LOS DIFERENTES PROYECTOS 
 
-from contador_caracteres import contador_caracteres
+import contador_caracteres as contador_caracteres
 
 
 
@@ -119,7 +119,7 @@ while opcion != "6":
         
         # --------------- Herramienta 4. ----------------
         
-        contador_caracteres
+       
 
         finalizar_programa()
             
@@ -134,7 +134,8 @@ while opcion != "6":
         # --------------- Herramienta 4. ----------------
 
         
-        
+        contador_caracteres.contador_caracteres()
+        finalizar_programa()
         
     
         # ---------------- Fin opción 4. ---------------- 

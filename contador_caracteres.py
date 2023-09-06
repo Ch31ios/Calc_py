@@ -1,5 +1,4 @@
 #Contador Caracteres v1
-from menú import finalizar_programa
 def contador_caracteres():
 
     while True:
@@ -9,6 +8,6 @@ def contador_caracteres():
 
         again = input('¿Quiere ingresar otra frase? (s/n) ')
         if again.lower() == 'n':
-            finalizar_programa()
+            break
 
 
