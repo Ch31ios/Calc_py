@@ -9,8 +9,7 @@ from tkinter import *
 
 
 import contador_caracteres as contador_caracteres
-
-
+import conversor as conversor
 
 
 
@@ -95,8 +94,7 @@ while opcion != "6":
         input()
 
         # --------------- Herramienta 2. ----------------
-        
-
+        conversor.Conversor()
 
         finalizar_programa()
             
