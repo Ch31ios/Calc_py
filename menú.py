@@ -1,14 +1,23 @@
 
 import os
+import random, string
 import sys
 import keyboard # pip install keyboard, en la terminal para descargar el import
+from tkinter import *
 
 # IMPORTAR LOS DIFERENTES PROYECTOS 
+
 
 import contador_caracteres as contador_caracteres
 
 
 
+
+
+#Este es la herramienta creada por sJuan felipe Suarez
+import calculadora as calculator_juan
+import GeneradorContraseñas as GeCon
+import contador_caracteres as contador_caracteres
 
 
 # --------------- Limpiar consola ---------------
@@ -23,7 +32,7 @@ limpiar_consola()
 
 def finalizar_programa():
     
-    print("\n \n" + "Gracias por jugar.")
+    print("\n \n" + "Gracias por utilizar el software.")
     print("\n" + "Presiona (Ctrl) para mostrar el menú o (Shift) para salir del programa. \n")
     
     while True:
@@ -71,11 +80,11 @@ while opcion != "6":
 
         # --------------- Herramienta 1. ----------------
         
-
+        calculator_juan.calculadora()
 
         finalizar_programa()
             
-        # ---------------- Fin opción 1. ---------------- 
+        # ---------------- Fin opción 1. ----------------
         
     elif opcion == "2":
         
@@ -91,7 +100,7 @@ while opcion != "6":
 
         finalizar_programa()
             
-        # ---------------- Fin opción 1. ---------------- 
+        # ---------------- Fin opción 2. ---------------- 
         
     elif opcion == "3":
         
@@ -107,7 +116,7 @@ while opcion != "6":
 
         finalizar_programa()
             
-        # ---------------- Fin opción 1. ----------------  
+        # ---------------- Fin opción 3. ----------------  
         
     elif opcion == "4":
     
@@ -118,8 +127,13 @@ while opcion != "6":
         input()
         
         # --------------- Herramienta 4. ----------------
+
         
        
+
+
+        GeCon.procedimiento()
+
 
         finalizar_programa()
             
@@ -128,17 +142,24 @@ while opcion != "6":
     elif opcion == "5":
 
         limpiar_consola()
+
         print("Has seleccionado la Opción 5. ( Contador de Caracteres ) \n")
         print("Preciona enter para ejecutar... \n")
         input()
-        # --------------- Herramienta 4. ----------------
+        # --------------- Herramienta 5. ----------------
+
 
         
         contador_caracteres.contador_caracteres()
         finalizar_programa()
         
+
+        contador_caracteres.contador_caracteres()
+
+        finalizar_programa()
+
     
-        # ---------------- Fin opción 4. ---------------- 
+        # ---------------- Fin opción 5. ---------------- 
     
     elif opcion == "6":
         
